@@ -1,0 +1,87 @@
+html, body {
+  font-family: 'Roboto', sans-serif;
+  padding: 0;
+  margin: 0;
+  background: url("../../assets/bg.jpg");
+  background-size: cover;
+  backdrop-filter: blur(10px);
+  
+}
+
+#root {
+  height: 100vh;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.joinOuterContainer {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  height: 100vh;
+  align-items: center;
+}
+
+.joinInnerContainer {
+  width: 20%;
+}
+
+.joinInput, .button {
+  width: 100%;
+  background: rgba(255, 255, 255, 0.037);
+  border-radius: 10px;
+  border: 1px solid rgba(126, 125, 125, 0.2);
+  backdrop-filter: blur(5px);
+  box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.601);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 15px 20px;
+  margin: 20px auto;
+}
+.joinInput::placeholder {
+  color: #000000;
+  font-weight: 550;
+}
+
+.chatImg {
+  padding-bottom: 10px;
+  width: 100px;
+  background: none;
+}
+
+.button {
+    color: #000000 ;
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 20px;
+    border-radius: 5px;
+    display: inline-block;
+    border: none;
+    width: 100%;
+    font-weight: 700;
+    cursor: pointer;
+}
+button:hover {
+  background-color: #000000;
+  color: white;
+}
+
+@media (min-width: 320px) and (max-width: 480px) {
+  .joinOuterContainer {
+    height: 100%;
+  }
+
+  .joinInnerContainer {
+    width: 90%;
+  }
+
+
+}
+
+button:focus {
+  outline: 0;
+}
