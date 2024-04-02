@@ -18,11 +18,7 @@ function Chat() {
 
   const dispatch = useDispatch();
 
-  const name = useSelector((state) => state.chat.name);
-  const room = useSelector((state) => state.chat.room);
-  const users = useSelector((state) => state.chat.users);
-  const message = useSelector((state) => state.chat.message);
-  const messages = useSelector((state) => state.chat.messages);
+  const { name, room, users, message, messages } = useSelector((state) => state.chat);
 
   const ENDPOINT = 'https://chat-app-5kky.onrender.com/'
 
